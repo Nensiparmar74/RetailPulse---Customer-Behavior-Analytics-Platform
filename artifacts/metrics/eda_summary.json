@@ -1,0 +1,85 @@
+{
+  "sales_rows": 779425,
+  "total_revenue": 17374804.268,
+  "total_orders": 36969,
+  "unique_customers": 5878,
+  "unique_products": 4631,
+  "average_order_value": 469.98307414320107,
+  "repeat_customer_rate": 72.38856753997959,
+  "top_countries": {
+    "Denmark": 68580.69,
+    "Sweden": 91515.82,
+    "Switzerland": 100061.94,
+    "Spain": 108332.49,
+    "Australia": 169283.46,
+    "France": 348768.96,
+    "Germany": 425019.711,
+    "Netherlands": 554038.09,
+    "EIRE": 616570.54,
+    "United Kingdom": 14389234.917
+  },
+  "top_products": [
+    {
+      "StockCode": "22423",
+      "Description": "REGENCY CAKESTAND 3 TIER",
+      "Quantity": 24124,
+      "Revenue": 277656.25
+    },
+    {
+      "StockCode": "85123A",
+      "Description": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "Quantity": 91757,
+      "Revenue": 247048.01
+    },
+    {
+      "StockCode": "23843",
+      "Description": "PAPER CRAFT , LITTLE BIRDIE",
+      "Quantity": 80995,
+      "Revenue": 168469.6
+    },
+    {
+      "StockCode": "M",
+      "Description": "Manual",
+      "Quantity": 9384,
+      "Revenue": 151777.67
+    },
+    {
+      "StockCode": "85099B",
+      "Description": "JUMBO BAG RED RETROSPOT",
+      "Quantity": 74224,
+      "Revenue": 134307.44
+    },
+    {
+      "StockCode": "POST",
+      "Description": "POSTAGE",
+      "Quantity": 5235,
+      "Revenue": 124648.04
+    },
+    {
+      "StockCode": "84879",
+      "Description": "ASSORTED COLOUR BIRD ORNAMENT",
+      "Quantity": 78234,
+      "Revenue": 124351.86
+    },
+    {
+      "StockCode": "47566",
+      "Description": "PARTY BUNTING",
+      "Quantity": 23460,
+      "Revenue": 103283.38
+    },
+    {
+      "StockCode": "23166",
+      "Description": "MEDIUM CERAMIC TOP STORAGE JAR",
+      "Quantity": 77916,
+      "Revenue": 81416.73000000001
+    },
+    {
+      "StockCode": "22086",
+      "Description": "PAPER CHAIN KIT 50'S CHRISTMAS ",
+      "Quantity": 28380,
+      "Revenue": 76598.18000000001
+    }
+  ],
+  "visualization_count": 12,
+  "revenue_currency": "GBP"
+}

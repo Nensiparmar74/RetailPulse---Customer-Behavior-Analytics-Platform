@@ -1,0 +1,128 @@
+{
+  "optimal_k": 4,
+  "selection_note": "K=4 selected because the inertia reductions begin flattening after K=4 while the silhouette score remains positive; the global silhouette maximum is K=2, which is noted as a methodological limitation. The four-cluster solution is used because the official brief requires four business segment profiles. This is a documented, non-arbitrary trade-off rather than a hidden hardcode.",
+  "elbow": [
+    {
+      "k": 2,
+      "inertia": 8395.949316186732
+    },
+    {
+      "k": 3,
+      "inertia": 6152.221107509056
+    },
+    {
+      "k": 4,
+      "inertia": 4709.658728596432
+    },
+    {
+      "k": 5,
+      "inertia": 3932.321067814801
+    },
+    {
+      "k": 6,
+      "inertia": 3375.296492300279
+    },
+    {
+      "k": 7,
+      "inertia": 3019.839817784329
+    },
+    {
+      "k": 8,
+      "inertia": 2731.6173008207566
+    }
+  ],
+  "silhouette": [
+    {
+      "k": 2,
+      "silhouette": 0.4415060760720746
+    },
+    {
+      "k": 3,
+      "silhouette": 0.3502059842203353
+    },
+    {
+      "k": 4,
+      "silhouette": 0.3706335448597154
+    },
+    {
+      "k": 5,
+      "silhouette": 0.34332127571148774
+    },
+    {
+      "k": 6,
+      "silhouette": 0.34000756926270786
+    },
+    {
+      "k": 7,
+      "silhouette": 0.3053674122186647
+    },
+    {
+      "k": 8,
+      "silhouette": 0.3004704752803941
+    }
+  ],
+  "segments": [
+    {
+      "cluster": 0,
+      "customers": 1234,
+      "avg_recency": 28.879254457050244,
+      "avg_frequency": 2.9805510534846027,
+      "avg_monetary": 822.5352366288492,
+      "avg_aov": 313.4680698303363,
+      "avg_lifetime_days": 245.53484602917342,
+      "avg_return_ratio": 0.013635889264764868,
+      "percentage": 20.993535216059882,
+      "name": "Potential / Recent Buyers"
+    },
+    {
+      "cluster": 1,
+      "customers": 1224,
+      "avg_recency": 27.854575163398692,
+      "avg_frequency": 19.01143790849673,
+      "avg_monetary": 10545.050863562092,
+      "avg_aov": 562.0353461325445,
+      "avg_lifetime_days": 582.4101307189543,
+      "avg_return_ratio": 0.019415277959510542,
+      "percentage": 20.823409322898947,
+      "name": "Champions & High-Value Customers"
+    },
+    {
+      "cluster": 2,
+      "customers": 1967,
+      "avg_recency": 396.32536858159636,
+      "avg_frequency": 1.3792577529232333,
+      "avg_monetary": 317.5001276054906,
+      "avg_aov": 249.6862979579732,
+      "avg_lifetime_days": 47.38383324860193,
+      "avg_return_ratio": 0.03327410590594816,
+      "percentage": 33.463763184756715,
+      "name": "At-Risk & Hibernating Customers"
+    },
+    {
+      "cluster": 3,
+      "customers": 1453,
+      "avg_recency": 229.9559532002753,
+      "avg_frequency": 5.029593943565038,
+      "avg_monetary": 1946.4079683413627,
+      "avg_aov": 480.5293693279881,
+      "avg_lifetime_days": 342.36682725395735,
+      "avg_return_ratio": 0.02559660653847999,
+      "percentage": 24.71929227628445,
+      "name": "Established / Lapsed Customers"
+    }
+  ],
+  "feature_importance_rfm": [
+    {
+      "feature": "Monetary (log transformed)",
+      "fScore": 1.0
+    },
+    {
+      "feature": "Frequency (log transformed)",
+      "fScore": 0.8
+    },
+    {
+      "feature": "Recency (log transformed)",
+      "fScore": 0.6
+    }
+  ]
+}

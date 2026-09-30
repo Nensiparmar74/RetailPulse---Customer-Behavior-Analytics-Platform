@@ -1,0 +1,35 @@
+[
+  {
+    "test_name": "Welch t-test: UK vs International AOV",
+    "null_hypothesis": "Mean AOV is equal between UK and international customers.",
+    "alternative_hypothesis": "Mean AOV differs between UK and international customers.",
+    "test_statistic": "t-statistic",
+    "statistic_value": -7.551723799776569,
+    "p_value": 1.1636585824082087e-13,
+    "significance_threshold": 0.05,
+    "is_statistically_significant": true,
+    "business_interpretation": "At alpha=0.05, reject H0. UK mean AOV=358.97; international mean AOV=650.74."
+  },
+  {
+    "test_name": "Chi-square: Segment vs churn status",
+    "null_hypothesis": "Customer segment and churn status are independent.",
+    "alternative_hypothesis": "Customer segment and churn status are associated.",
+    "test_statistic": "Chi-square",
+    "statistic_value": 1928.912099013632,
+    "p_value": 0.0,
+    "significance_threshold": 0.05,
+    "is_statistically_significant": true,
+    "business_interpretation": "At alpha=0.05, reject H0; segment and churn status show an association."
+  },
+  {
+    "test_name": "One-way ANOVA: AOV across segments",
+    "null_hypothesis": "All segment mean AOVs are equal.",
+    "alternative_hypothesis": "At least one segment mean AOV differs.",
+    "test_statistic": "F-statistic",
+    "statistic_value": 21.461071295476607,
+    "p_value": 8.054409931979172e-14,
+    "significance_threshold": 0.05,
+    "is_statistically_significant": true,
+    "business_interpretation": "At alpha=0.05, reject H0."
+  }
+]

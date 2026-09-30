@@ -1,0 +1,49 @@
+{
+  "raw_row_count": 1067371,
+  "column_count": 8,
+  "columns": [
+    "Invoice",
+    "StockCode",
+    "Description",
+    "Quantity",
+    "InvoiceDate",
+    "Price",
+    "Customer ID",
+    "Country"
+  ],
+  "dtypes": {
+    "Invoice": "string",
+    "StockCode": "string",
+    "Description": "string",
+    "Quantity": "int64",
+    "InvoiceDate": "datetime64[ns]",
+    "Price": "float64",
+    "Customer ID": "string",
+    "Country": "string"
+  },
+  "missing_values": {
+    "Invoice": 0,
+    "StockCode": 0,
+    "Description": 4382,
+    "Quantity": 0,
+    "InvoiceDate": 0,
+    "Price": 0,
+    "Customer ID": 243007,
+    "Country": 0
+  },
+  "duplicate_rows": 34335,
+  "unique_invoices": 53628,
+  "unique_products": 5305,
+  "unique_customers_non_null": 5942,
+  "unique_countries": 43,
+  "negative_quantity_rows": 22950,
+  "zero_quantity_rows": 0,
+  "zero_price_rows": 6202,
+  "negative_price_rows": 5,
+  "cancellation_style_rows": 19494,
+  "invalid_dates": 0,
+  "date_range": {
+    "start": "2009-12-01T07:45:00",
+    "end": "2011-12-09T12:50:00"
+  }
+}

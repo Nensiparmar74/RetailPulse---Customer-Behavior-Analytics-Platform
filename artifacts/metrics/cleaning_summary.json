@@ -1,0 +1,66 @@
+{
+  "raw_rows": 1067371,
+  "deduped_rows": 1033036,
+  "cleaned_sales_rows": 779425,
+  "rows_removed_from_sales": 287946,
+  "rules": [
+    {
+      "issue": "Missing Customer ID",
+      "count": 235151,
+      "action": "Exclude from customer-level RFM, churn and cohort datasets; do not impute IDs",
+      "status": "Excluded",
+      "justification": "A synthetic customer ID would fabricate longitudinal customer history."
+    },
+    {
+      "issue": "Exact duplicate rows",
+      "count": 34335,
+      "action": "Drop exact duplicates",
+      "status": "Cleaned",
+      "justification": "Prevents double-counting identical transaction records."
+    },
+    {
+      "issue": "Cancellation-style invoices",
+      "count": 19104,
+      "action": "Exclude from positive-sales table; preserve return/cancellation features",
+      "status": "Reviewed",
+      "justification": "Cancellation rows are not completed positive sales but are useful for customer-behavior features."
+    },
+    {
+      "issue": "Non-positive quantity",
+      "count": 22496,
+      "action": "Exclude from positive-sales table",
+      "status": "Excluded",
+      "justification": "RFM and positive commercial revenue use completed positive-quantity purchases."
+    },
+    {
+      "issue": "Non-positive unit price",
+      "count": 6019,
+      "action": "Exclude from positive-sales table",
+      "status": "Excluded",
+      "justification": "Zero or negative unit-price rows do not represent positive commercial revenue."
+    },
+    {
+      "issue": "Invalid dates",
+      "count": 0,
+      "action": "Exclude from time-based analyses",
+      "status": "Excluded",
+      "justification": "Time-series and cohort calculations require valid dates."
+    }
+  ],
+  "revenue_definition": "Primary positive-sales revenue = original Quantity * original Price for valid completed positive sales. IQR-capped helper fields are not used to rewrite headline revenue.",
+  "imputation": {
+    "Description": "Unknown Product Description",
+    "rows_imputed_in_sales": 0,
+    "Customer ID": "Not imputed; excluded from longitudinal customer analysis"
+  },
+  "outlier_capping": {
+    "method": "IQR 1.5x rule",
+    "purpose": "Robust analytical/modeling helper fields; original Quantity, Price and Revenue are preserved for headline commercial metrics.",
+    "quantity_lower_bound": 1,
+    "quantity_upper_bound": 27.0,
+    "price_lower_bound": 0.01,
+    "price_upper_bound": 7.5,
+    "quantity_values_capped": 51119,
+    "price_values_capped": 65481
+  }
+}

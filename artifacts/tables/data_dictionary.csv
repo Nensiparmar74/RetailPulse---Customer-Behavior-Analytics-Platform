@@ -1,0 +1,10 @@
+column,description
+Invoice,Invoice/order identifier; values beginning with C indicate cancellation-style invoices.
+StockCode,Product/stock identifier.
+Description,Product description.
+Quantity,Units on the transaction line; positive values are completed purchases in the primary sales table.
+InvoiceDate,"Transaction timestamp used for temporal analysis, RFM, churn windows and cohorts."
+Price,Unit price in GBP.
+Customer ID,Customer identifier; missing values are excluded from longitudinal customer analysis.
+Country,Customer country.
+Revenue,Line revenue = Quantity * Price for primary positive-sales analysis.

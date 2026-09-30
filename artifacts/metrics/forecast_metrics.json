@@ -1,0 +1,29 @@
+{
+  "model_name": "SARIMA(0, 1, 1)x(1, 0, 0, 12)",
+  "order": [
+    0,
+    1,
+    1
+  ],
+  "seasonal_order": [
+    1,
+    0,
+    0,
+    12
+  ],
+  "horizon_months": 3,
+  "confidence_level": 0.95,
+  "backtest_mae": 36974.56353786553,
+  "backtest_rmse": 60304.59079354822,
+  "backtest_mape": 3.8604985564070513,
+  "training_start": "2009-12",
+  "training_end": "2011-11",
+  "validation_months": [
+    "2011-09",
+    "2011-10",
+    "2011-11"
+  ],
+  "latest_historical_revenue": 1156205.61,
+  "next_month_forecast": 610300.2787341748,
+  "next_three_months_forecast_total": 1714489.0710126876
+}

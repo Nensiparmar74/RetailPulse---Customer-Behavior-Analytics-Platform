@@ -1,0 +1,9 @@
+{
+  "observation_end": "2011-06-30 23:59:59",
+  "prediction_end": "2011-09-30 23:59:59",
+  "churn_definition": "Customer is labelled churned when they have zero completed purchase orders during the three-month prediction window after the observation cutoff.",
+  "observation_customers": 5041,
+  "churn_rate": 65.00694306685182,
+  "positive_sales_observation_rows": 557398,
+  "future_window_rows": 93039
+}
