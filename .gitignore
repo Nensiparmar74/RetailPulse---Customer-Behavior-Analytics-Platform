@@ -10,5 +10,3 @@ mlruns/
 *.log
 node_modules/
 dist/
-artifacts/figures/**/*.png
-artifacts/shap/*.png
